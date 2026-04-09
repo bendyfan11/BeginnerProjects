@@ -9,7 +9,7 @@ class Game:
         self.suspicion = 0
         self.sleigh_cookies = 0
         self.eaten_cookies = 0
-        self.hiding_spots = ["the pantry", "a closet", "under the table", "behind the couch, The basement", "the attic", "the laundry room", "the garage", "the bathroom", "the bedroom", "the dining room"]
+        self.hiding_spots = ["into the pantry", "inside a closet", "under a table", "behind a couch", "into The Flavor text (How meta!)", "into The basement", "into the attic", "into the laundry room", "into the garage", "into the bathroom", "into the bedroom", "into the dining room"]
     def startup(self):
         print("You are santa clause.")
         time.sleep(1)
@@ -89,7 +89,7 @@ class Game:
             print("No cookies to eat. You chew on your beard instead.")
     def hide(self):
             spot = random.choice(self.hiding_spots)
-            print(f"You duck into {spot} to hide.")
+            print(f"You duck {spot} to hide.")
             time.sleep(5)
             print("Grandma is looking around...")
             time.sleep(1)
